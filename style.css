@@ -1,0 +1,138 @@
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+.cursor{
+    position: relative;
+    width: 24em;
+   
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 90px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;  
+   font-weight: bolder;
+    color: purple;
+    z-index: -2;
+}
+
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+
+body {
+    margin:0;
+    background-color: yellow;
+
+}
+
+
+.spin {
+    width: 200px;
+    height: 200px;
+  
+    -webkit-animation: squareToCircle 2s 1s infinite alternate;
+  }
+  
+  @-webkit-keyframes squareToCircle {
+      0% {
+        border-radius: 0 0 0 0;
+    
+        transform: rotate(0deg);
+      }
+      25% {
+        border-radius: 50% 0 0 0;
+   
+        transform: rotate(45deg);
+      }
+      50% {
+        border-radius: 50% 50% 0 0;
+  
+        transform: rotate(90deg);
+      }
+      75% {
+        border-radius: 50% 50% 50% 0;
+
+        transform: rotate(135deg);
+      }
+      100% {
+        border-radius: 50% 50% 50% 50%;
+
+        transform: rotate(180deg);
+      }
+  }
+  video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index:-100;
+}
+
+
+.vid{
+  margin-top:240px;
+}
+
+.glow {
+margin-top: 300px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: purple;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  
+  position: absolute;
+ 
+  white-space: wrap;
+
+  font-size: 45px;
+font-style:italic;
+margin-top: 40px;
+margin-left: 40px;
+margin-right:40px;
+z-index: 1;
+color: yellow;
+}
+
+.yellow {
+  position:absolute;
+  top: 100px;
+}
